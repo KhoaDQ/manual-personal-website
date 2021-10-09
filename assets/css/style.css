@@ -12,6 +12,10 @@ html {
   clear: both;
 }
 
+.text-white {
+  color: #fff !important;
+}
+
 #main {
 }
 
@@ -188,6 +192,100 @@ a.goto-social:hover {
   margin-top: 15px;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Spec section */
+.spec-section {
+  background-color: #000;
+}
+
+.tickets-list {
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.tickets-list li {
+  color: #757575;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+}
+
+.tickets-list .ticket-content {
+  /* background-color: #b8b2b2; */
+  /* color: #fff; */
+  color: #000;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+
+.tickets-list .ticket-number {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+
+/* Spec */
+.specs-list {
+  margin: 32px -8px 48px;
+}
+
+.spec-item {
+  float: left;
+  width: 33.33333%;
+  padding: 0 8px;
+}
+
+.spec-img {
+  width: 100%;
+  height: 230px;
+  display: block;
+}
+
+.spec-img:hover {
+  opacity: 0.6;
+}
+
+.spec-body {
+  padding: 16px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.spec-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.spec-detail {
+  margin-top: 15px;
+  color: #757575;
+}
+
+.spec-desc {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+.spec-go-btn {
+  color: #fff;
+  background-color: black;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.spec-go-btn:hover {
+  color: #000;
+  background-color: #ccc;
 }
 
 #footer {
