@@ -175,7 +175,7 @@ html {
 
 #content .content-section {
   width: 800px;
-  padding: 64px 0;
+  padding: 64px 0 112px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -270,7 +270,6 @@ a.goto-social:hover {
 /* Spec */
 .specs-list {
   margin-top: 32px;
-  margin-bottom: 48px;
 }
 
 .spec-img {
@@ -355,6 +354,31 @@ a.goto-social:hover {
   cursor: pointer;
 }
 
+/* Qoute */
+.qoute-section img {
+  width: 100%;
+}
+
 /* Footer */
 #footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+
+#footer .socials-list {
+  font-size: 24px;
+}
+
+#footer .socials-list a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+#footer .copywrite a:hover,
+#footer .socials-list a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copywrite a {
+  color: rgba(0, 0, 0, 0.8);
 }
