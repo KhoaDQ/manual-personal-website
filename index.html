@@ -124,7 +124,7 @@
                                 <h3 class="spec-heading">Frontend</h3>
                                 <p class="spec-detail">CSS - HTML - JS - ReactJS - Blazor</p>
                                 <p class="spec-desc">I have more 1 year experience.</p>
-                                <a href="#" class="spec-go-btn">More</a>
+                                <button class="spec-go-btn">More</button>
                             </div>
                         </div>
                         <div class="col col-third">
@@ -133,7 +133,7 @@
                                 <h3 class="spec-heading">Backend</h3>
                                 <p class="spec-detail">C# - .Net - ASP.Net Core - MVC - Node</p>
                                 <p class="spec-desc">I have more 2 year experience.</p>
-                                <a href="#" class="spec-go-btn">More</a>
+                                <button class="spec-go-btn">More</button>
                             </div>
                         </div>
                         <div class="col col-third">
@@ -142,7 +142,7 @@
                                 <h3 class="spec-heading">Database</h3>
                                 <p class="spec-detail">MS SQL Server - SQL - LinQ - MongoDB</p>
                                 <p class="spec-desc">I have more 1 year experience.</p>
-                                <a href="#" class="spec-go-btn">More</a>
+                                <button class="spec-go-btn">More</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -201,5 +201,64 @@
             </p>
         </div>
     </div>
+
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-bag"></i>
+                More Information
+            </header>
+
+            <div class="modal-body">
+                <p>
+                    As a student in Information Systems and having a passion for .Net, I have both an overview of information systems and
+                    knowledge of building Microsoft-related applications. I fled from a traditional path and explored my creativity, trough
+                    trying my hands on various techniques and software. Software is more than just a tool, and I try to dig deep into it.
+                    Today, I knack for critical thinking, empathy and creativity to create viable and impactful solutions using these
+                    technologies.
+                    <br><br>
+                    <b>Microsoft .NET skills: </b> C#, .NET, ASP.NET, ASP.NET Core, Web MVC, Web API, Entity Framework, UnitTest, Blazor,
+                    <br><b>Frontend skills: </b> HTML, CSS, JS, ReactJS + Redux, JQuery,
+                    <br><b>Database: </b> Microsoft SQL Server
+                    <br><b>Methodologies: </b> Agile, Scrum
+                    <br><b>Tools: </b> Visual Studio 2019, Visual Studio Code, Git, AzureDevops, Microsoft SSMS
+                    <br><br><b>And information systems analysis, design and modeling skills.</b> I am still actively cultivating my professional skills as well as learning from people around me. I hope a good future
+                    for both me and the path that I am on
+                </p>
+            </div>
+            
+            <footer class="modal-footer">
+                <button class="modal-close-btn">CLOSE</button>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const moreBtns=document.querySelectorAll('.spec-go-btn')
+        const modal=document.querySelector('.modal')
+        const modalContainer = document.querySelector('.modal-container')
+        const modalClose=document.querySelector('.modal-close')
+        const modalCloseBtn = document.querySelector('.modal-close-btn')
+
+        function showMoreInfo(){
+            modal.classList.add('open')
+        }
+        function hideMoreInfo() {
+                modal.classList.remove('open')
+            }
+
+        for (const btn of moreBtns){
+            btn.addEventListener('click', showMoreInfo)
+        }
+        modalClose.addEventListener('click', hideMoreInfo)
+        modalCloseBtn.addEventListener('click',hideMoreInfo)
+        modal.addEventListener('click', hideMoreInfo)
+        modalContainer.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
 </body>
 </html>
