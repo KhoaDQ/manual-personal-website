@@ -6,6 +6,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
 }
 .clear {
@@ -154,7 +155,7 @@ html {
 
 #slider .text-content {
   position: absolute;
-  bottom: 47px;
+  bottom: 88px;
   color: #fff;
   width: 100%;
   text-align: center;
